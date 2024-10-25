@@ -1,0 +1,37 @@
+.button {
+	@include reset-button;
+
+	height: var(--button-height);
+	font-weight: 500;
+	font-size: 18px;
+	padding-inline: 26px;
+	color: var(--color-light);
+	background-color: var(--color-accent);
+	border-radius: 18px;
+	border: 1px solid var(--color-accent);
+
+	@include tablet {
+		padding-inline: 21px;
+		--button-height: 42px;
+		border-radius: 8px;
+		font-size: 13px;
+	}
+
+	@include hover {
+		color: var(--color-accent);
+		background-color: var(--color-light);
+
+	}
+
+	&--transparent {
+		color: var(--color-gray);
+		background-color: transparent;
+		border-color: transparent;
+
+		@include hover {
+			border-color: var(--color-accent);
+			color: var(--color-dark);
+		}
+	}
+
+}

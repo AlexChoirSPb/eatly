@@ -1,0 +1,35 @@
+:root {
+	--color-dark: #201F1F;
+	// --color-dark-alt: #292A32;
+	--color-light: #F9F9F9;
+	--color-accent: #6C5FBC;
+	--color-gray: #606060;
+	--color-gray-alt: #CBCBCB;
+
+	// --border: 1px solid var(--color-dark);
+	--border-radius: 18px;
+	// --border-radius-small: 7px;
+	// --border-radius-large: 45px;
+
+	// --shadow: 0 5px 0 0 var(--color-dark);
+
+	--font-family: 'Inter', sans-serif;
+
+	--container-width: 1248px;
+	--container-padding-x: 30px;
+
+	--section-padding-y: 50px;
+
+	// --input-height: 59px;
+	--button-height: 59px;
+
+	--transition-duration: 0.2s;
+
+	@include desktop {
+		--section-padding-y: 35px;
+	}
+
+	@include mobile {
+		--section-padding-y: 42px;
+	}
+}
