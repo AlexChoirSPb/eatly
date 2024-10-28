@@ -181,7 +181,7 @@
 		}
 	}
 
-	&__feedback {
+	&__reviews {
 		display: flex;
 		align-items: flex-end;
 		column-gap: 20px;
@@ -196,7 +196,7 @@
 	}
 
 	
-	&__feedback-image {
+	&__reviews-image {
 		@include desktop {
 			width: 100px;
 			height: auto;
@@ -209,7 +209,7 @@
 	}
 
 
-	&__feedback-value {
+	&__reviews-value {
 		font-family: "Plus Jakarta Sans";
 		font-size: 16px;
 		font-weight: 500;
