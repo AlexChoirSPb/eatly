@@ -34,4 +34,15 @@
 		}
 	}
 
+	&--bordered {
+		color: var(--color-accent);
+		background-color: transparent;
+		border-color: var(--color-transparent);
+
+		@include hover {
+			color: var(--color-light);
+			background-color: var(--color-accent);
+		}
+	}
+
 }

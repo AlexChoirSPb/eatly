@@ -1,0 +1,7 @@
+.section {
+	padding-block: 45px 85px;
+
+	@include tablet {
+		padding-block: 35px 60px;
+	}
+}
