@@ -1,0 +1,246 @@
+.hero {
+
+	&__main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 24px;
+
+		@include mobile {
+			flex-direction: column;
+			align-items: center;
+			row-gap: 47px;
+		}
+
+	}
+
+	&__body {
+		max-width: 567px;
+
+		@include desktop {
+			max-width: 487px;
+		}
+
+		@include tablet {
+			max-width: 45%;
+		}
+
+		
+		@include mobile {
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+	}
+
+	&__achivment {
+		font-size: 15px;
+		line-height: 1.2;
+		color: rgba(32, 31, 31, 0.2);
+		letter-spacing: 2px;
+		font-family: "Poppins";
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+		margin-bottom: 18px;
+
+		&::before {
+			content: "";
+			width: 54px;
+			height: 1px;
+			background-color: rgba(32, 31, 31, 0.2);
+		}
+
+		@include desktop {
+			font-size: 13px;
+			column-gap: 16px;
+			margin-bottom: 16px;
+
+			&::before {
+				width: 45px;
+			}
+		}
+
+		@include tablet {
+			font-size: 11px;
+			column-gap: 14px;
+			margin-bottom: 12px;
+
+			&::before {
+				width: 38px;
+			}
+		}
+
+		@include mobile {
+			font-size: 9px;
+			column-gap: 12px;
+			margin-bottom: 5px;
+			color: #201F1F;
+
+			&::before {
+				width: 33px;
+				background-color: currentColor;
+			}
+		}
+	}
+
+	&__title,
+	&__title-accent {
+		font-size: 75px;
+		font-family: "Poppins";
+		font-weight: 600;
+		line-height: 1.2;
+		letter-spacing: -3px;
+		margin-bottom: 16px;
+
+		@include desktop {
+			font-size: 62px;
+			margin-bottom: 14px;
+		}
+
+		@include tablet {
+			font-size: 53px;
+			margin-bottom: 11px;
+		}
+
+		@include mobile {
+			font-size: 46px;
+			margin-bottom: 16px;
+			text-align: center;
+			letter-spacing: -1.5px;
+		}
+	}
+
+	&__title-accent {
+		color: var(--color-accent);
+	}
+
+	&__description,
+	&__description-accent {
+		font-size: 18px;
+		line-height: 1.55;
+		color: #676767;
+
+		@include desktop {
+			font-size: 16px;
+		}
+
+		@include tablet {
+			font-size: 13px;
+		}
+
+		@include mobile {
+			font-size: 11px;
+			text-align: center;
+		}
+	}
+
+	&__description {
+		max-width: 499px;
+		margin-bottom: 53px;
+		opacity: 0.7;
+
+		@include desktop {
+			max-width: 424px;
+			margin-bottom: 42px;
+		}
+
+		@include tablet {
+			max-width: 90%;
+			margin-bottom: 37px;
+		}
+
+		@include mobile {
+			max-width: 95%;
+			margin-bottom: 41px;
+		}
+	}
+
+	&__description-accent {
+		color: var(--color-accent);
+		font-weight: 500;
+		opacity: 1;
+	}
+
+	&__actions {
+		display: flex;
+		column-gap: 18px;
+		margin-bottom: 33px;
+
+		@include desktop {
+			margin-bottom: 26px;
+			column-gap: 16px;
+		}
+
+		@include tablet {
+			margin-bottom: 23px;
+			column-gap: 13px;
+		}
+	}
+
+	&__feedback {
+		display: flex;
+		align-items: flex-end;
+		column-gap: 20px;
+
+		@include desktop {
+			column-gap: 16px;
+		}
+
+		@include tablet {
+			column-gap: 14px;
+		}
+	}
+
+	
+	&__feedback-image {
+		@include desktop {
+			width: 100px;
+			height: auto;
+		}
+
+		@include tablet {
+			width: 88px;
+			height: auto;
+		}
+	}
+
+
+	&__feedback-value {
+		font-family: "Plus Jakarta Sans";
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.5;
+		color: #334155;
+		opacity: 0.7;
+
+		@include desktop {
+			font-size: 14px;
+		}
+
+		@include tablet {
+			font-size: 11px;
+		}
+	}
+
+	&__image {
+		@include desktop {
+			width: 500px;
+			height: auto;
+		}
+
+		@include tablet {
+			width: 50%;
+			height: auto;
+		}
+
+		@include mobile {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+

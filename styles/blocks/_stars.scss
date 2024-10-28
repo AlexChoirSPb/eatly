@@ -1,0 +1,24 @@
+.stars {
+
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: 4px;
+	}
+
+	&__item {
+		color: #F59E0B;
+		
+		& svg {
+			@include desktop {
+				width: 14px;
+				height: 14px;
+			}
+
+			@include tablet {
+				width: 12px;
+				height: 12px;
+			}
+		}
+	}
+}
