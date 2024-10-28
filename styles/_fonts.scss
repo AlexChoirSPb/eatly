@@ -1,8 +1,8 @@
 // Inter Font
 @font-face {
 	font-family: 'Inter';
-	src: url('/fonts/Inter-Regular.woff2') format('woff2'),
-		 url('/fonts/Inter-Regular.woff') format('woff');
+	src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+		 url('../fonts/Inter-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -10,8 +10,8 @@
 
 @font-face {
 	font-family: 'Inter';
-	src: url('/fonts/Inter-Medium.woff2') format('woff2'),
-		 url('/fonts/Inter-Medium.woff') format('woff');
+	src: url('../fonts/Inter-Medium.woff2') format('woff2'),
+		 url('../fonts/Inter-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
 	font-family: 'Inter';
-	src: url('/fonts/Inter-SemiBold.woff2') format('woff2'),
-		 url('/fonts/Inter-SemiBold.woff') format('woff');
+	src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+		 url('../fonts/Inter-SemiBold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -28,8 +28,8 @@
 
 @font-face {
 	font-family: 'Inter';
-	src: url('/fonts/Inter-Bold.woff2') format('woff2'),
-		 url('/fonts/Inter-Bold.woff') format('woff');
+	src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+		 url('../fonts/Inter-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -39,8 +39,8 @@
 // Manrope Font
 @font-face {
 	font-family: 'Manrope';
-	src: url('/fonts/Manrope-Regular.woff2') format('woff2'),
-		 url('/fonts/Manrope-Regular.woff') format('woff');
+	src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+		 url('../fonts/Manrope-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -48,8 +48,8 @@
 
 @font-face {
 	font-family: 'Manrope';
-	src: url('/fonts/Manrope-Medium.woff2') format('woff2'),
-		 url('/fonts/Manrope-Medium.woff') format('woff');
+	src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+		 url('../fonts/Manrope-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -57,8 +57,8 @@
 
 @font-face {
 	font-family: 'Manrope';
-	src: url('/fonts/Manrope-SemiBold.woff2') format('woff2'),
-		 url('/fonts/Manrope-SemiBold.woff') format('woff');
+	src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+		 url('../fonts/Manrope-SemiBold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -66,8 +66,8 @@
 
 @font-face {
 	font-family: 'Manrope';
-	src: url('/fonts/Manrope-Bold.woff2') format('woff2'),
-		 url('/fonts/Manrope-Bold.woff') format('woff');
+	src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+		 url('../fonts/Manrope-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -75,8 +75,8 @@
 
 @font-face {
 	font-family: 'Manrope';
-	src: url('/fonts/Manrope-ExtraBold.woff2') format('woff2'),
-		 url('/fonts/Manrope-ExtraBold.woff') format('woff');
+	src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+		 url('../fonts/Manrope-ExtraBold.woff') format('woff');
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
@@ -86,8 +86,8 @@
 //Plus Jakarta Sans Font
 @font-face {
 	font-family: 'Plus Jakarta Sans';
-	src: url('/fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
-		 url('/fonts/PlusJakartaSans-Medium.woff') format('woff');
+	src: url('../fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
+		 url('../fonts/PlusJakartaSans-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -97,8 +97,8 @@
 //Poppins Font
 @font-face {
 	font-family: 'Poppins';
-	src: url('/fonts/Poppins-Regular.woff2') format('woff2'),
-		 url('/fonts/Poppins-Regular.woff') format('woff');
+	src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+		 url('../fonts/Poppins-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -106,8 +106,8 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url('/fonts/Poppins-Italic.woff2') format('woff2'),
-		 url('/fonts/Poppins-Italic.woff') format('woff');
+	src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+		 url('../fonts/Poppins-Italic.woff') format('woff');
 	font-weight: 400;
 	font-style: italic;
 	font-display: swap;
@@ -115,8 +115,8 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url('/fonts/Poppins-Medium.woff2') format('woff2'),
-		 url('/fonts/Poppins-Medium.woff') format('woff');
+	src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+		 url('../fonts/Poppins-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -124,8 +124,8 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url('/fonts/Poppins-SemiBold.woff2') format('woff2'),
-		 url('/fonts/Poppins-SemiBold.woff') format('woff');
+	src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+		 url('../fonts/Poppins-SemiBold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -133,8 +133,8 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url('/fonts/Poppins-Bold.woff2') format('woff2'),
-		 url('/fonts/Poppins-Bold.woff') format('woff');
+	src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+		 url('../fonts/Poppins-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -142,8 +142,8 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url('/fonts/Poppins-ExtraBold.woff2') format('woff2'),
-		 url('/fonts/Poppins-ExtraBold.woff') format('woff');
+	src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+		 url('../fonts/Poppins-ExtraBold.woff') format('woff');
 	font-weight: 800;
 	font-style: normal;
 	font-display: swap;
@@ -153,8 +153,8 @@
 //Public Sans Font
 @font-face {
 	font-family: 'Public Sans';
-	src: url('/fonts/PublicSans-Bold.woff2') format('woff2'),
-		 url('/fonts/PublicSans-Bold.woff') format('woff');
+	src: url('../fonts/PublicSans-Bold.woff2') format('woff2'),
+		 url('../fonts/PublicSans-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -164,8 +164,8 @@
 //Roboto Font
 @font-face {
 	font-family: 'Roboto';
-	src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
-		 url('/fonts/Roboto-Regular.woff') format('woff');
+	src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+		 url('../fonts/Roboto-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -173,8 +173,8 @@
 
 @font-face {
 	font-family: 'Roboto';
-	src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
-		 url('/fonts/Roboto-Bold.woff') format('woff');
+	src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+		 url('../fonts/Roboto-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -184,8 +184,8 @@
 //Quicksand Font
 @font-face {
 	font-family: 'Quicksand';
-	src: url('/fonts/Quicksand-Medium.woff2') format('woff2'),
-		 url('/fonts/Quicksand-Medium.woff') format('woff');
+	src: url('../fonts/Quicksand-Medium.woff2') format('woff2'),
+		 url('../fonts/Quicksand-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
