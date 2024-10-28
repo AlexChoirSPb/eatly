@@ -326,7 +326,7 @@ svg * {
 }
 @media (max-width: 767px) {
   :root {
-    --section-padding-y: 42px;
+    --section-padding-y: 30px;
   }
 }
 
