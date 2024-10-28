@@ -413,12 +413,32 @@ h4, .h4 {
   font-size: clamp(18px, 1.3888888889vw, 20px);
 }
 
-.section {
+.section--hero {
   padding-block: 45px 85px;
 }
 @media (max-width: 1023px) {
-  .section {
+  .section--hero {
     padding-block: 35px 60px;
+  }
+}
+.section--features {
+  width: 100%;
+  padding-block: 49px;
+  background-color: var(--color-accent);
+  margin: 0;
+  max-width: 100%;
+  background: left/contain no-repeat url("/images/features-bg-left.svg"), right/contain no-repeat url("/images/features-bg-right.svg"), var(--color-accent);
+}
+@media (max-width: 1280px) {
+  .section--features {
+    padding-block: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .section--features {
+    padding-bottom: 26px;
+    padding-inline: 60px;
+    background: top left/330px auto no-repeat url("/images/features-mobile-top-left-bg.svg"), bottom right/135px auto no-repeat url("/images/features-mobile-bottom-right-bg.svg"), var(--color-accent);
   }
 }
 
@@ -807,7 +827,7 @@ h4, .h4 {
             column-gap: 13px;
   }
 }
-.hero__feedback {
+.hero__reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,32 +839,32 @@ h4, .h4 {
           column-gap: 20px;
 }
 @media (max-width: 1280px) {
-  .hero__feedback {
+  .hero__reviews {
     -webkit-column-gap: 16px;
        -moz-column-gap: 16px;
             column-gap: 16px;
   }
 }
 @media (max-width: 1023px) {
-  .hero__feedback {
+  .hero__reviews {
     -webkit-column-gap: 14px;
        -moz-column-gap: 14px;
             column-gap: 14px;
   }
 }
 @media (max-width: 1280px) {
-  .hero__feedback-image {
+  .hero__reviews-image {
     width: 100px;
     height: auto;
   }
 }
 @media (max-width: 1023px) {
-  .hero__feedback-image {
+  .hero__reviews-image {
     width: 88px;
     height: auto;
   }
 }
-.hero__feedback-value {
+.hero__reviews-value {
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
   font-weight: 500;
@@ -853,12 +873,12 @@ h4, .h4 {
   opacity: 0.7;
 }
 @media (max-width: 1280px) {
-  .hero__feedback-value {
+  .hero__reviews-value {
     font-size: 14px;
   }
 }
 @media (max-width: 1023px) {
-  .hero__feedback-value {
+  .hero__reviews-value {
     font-size: 11px;
   }
 }
@@ -878,6 +898,99 @@ h4, .h4 {
   .hero__image {
     width: 100%;
     height: auto;
+  }
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .features__list {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.features__item {
+  padding-inline: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 11px;
+  color: var(--color-light);
+  max-width: 338px;
+}
+.features__item:not(:last-child) {
+  border-right: 1px solid rgba(197, 197, 197, 0.15);
+}
+@media (max-width: 1023px) {
+  .features__item {
+    padding-inline: 44px;
+    row-gap: 7px;
+    max-width: 240px;
+  }
+}
+@media (max-width: 767px) {
+  .features__item {
+    padding-inline: 0;
+    padding-block: 60px;
+    max-width: 100%;
+  }
+  .features__item:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.15);
+  }
+}
+.features__title {
+  font-family: "Public Sans";
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+@media (max-width: 1023px) {
+  .features__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .features__title {
+    font-size: 43px;
+  }
+}
+.features__description {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #C5BFED;
+}
+@media (max-width: 1023px) {
+  .features__description {
+    font-size: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .features__description {
+    font-size: 14px;
   }
 }
 
