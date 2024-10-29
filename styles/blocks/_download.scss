@@ -1,0 +1,176 @@
+.download {
+
+	&__main {
+		display: flex;
+		align-items: center;
+		column-gap: 24px;
+		justify-content: space-between;
+
+		@include mobile {
+			flex-direction: column-reverse;
+			row-gap: 100px;
+			column-gap: 0;
+			justify-content: start;
+		}
+	}
+
+	&__image {
+		margin-left: 140px;
+
+		@include desktop {
+			margin-left: 80px;
+		}
+
+		@include tablet {
+			width: 264px;
+			height: auto;
+		}
+
+		@include mobile {
+			width: 210px;
+			height: auto;
+			margin-left: 30px;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: 60px;
+		max-width: 560px;
+
+		@include tablet {
+			row-gap: 45px;
+			max-width: 400px;
+		}
+
+		@include mobile {
+			row-gap: 37px;
+			max-width: 330px;
+		}
+	}
+
+	&__title,
+	&__title-accent {
+		font-size: 50px;
+		font-family: "Poppins";
+		font-weight: 600;
+		line-height: 1.2;
+
+		@include tablet {
+			font-size: 36px;
+		}
+
+		@include mobile {
+			font-size: 30px;
+			text-align: center;
+		}
+	}
+
+	&__title-accent {
+		color: var(--color-accent);
+	}
+
+	&__description {
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 28px;
+
+		@include tablet {
+			row-gap: 19px;
+		}
+
+		@include mobile {
+			row-gap: 16px;
+		}
+	}
+
+	&__item {
+		padding-left: 20px;
+		font-size: 20px;
+		line-height: 1.5;
+		color: #676767;
+		position: relative;
+
+		
+		@include tablet {
+			padding-left: 15px;
+			font-size: 15px;
+		}
+
+		@include mobile {
+			padding-left: 12px;
+			font-size: 12px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #676767;
+			top:15px;
+			left: 0;
+			translate: 0 -3px;
+
+			@include tablet {
+				top: 11px;
+			}
+
+			@include mobile {
+				top: 9px;
+			}
+		}
+
+	}
+
+	&__download {
+		align-self: start;
+		position: relative;
+
+		@include mobile {
+			align-self: center;
+		}
+
+		
+		::after {
+			content: "";
+			width: 155px;
+			height: 87px;
+			background-image: url("../images/download-decorated-arrow.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			bottom: -90%;
+			right: -75%;
+			rotate: -35deg;
+
+			@include tablet {
+				width: 110px;
+				height: 62px;
+				bottom: -115%;
+				right: -63%;
+			}
+
+			@include mobile {
+				width: 101px;
+				height: 57px;
+				bottom: -150%;
+				right: 88%;
+				rotate: 70deg;
+			}
+		}
+
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		column-gap: 15px;
+	}
+}

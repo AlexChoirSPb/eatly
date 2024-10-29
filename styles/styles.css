@@ -413,8 +413,20 @@ h4, .h4 {
   font-size: clamp(18px, 1.3888888889vw, 20px);
 }
 
+.section {
+  padding-block: 100px 120px;
+}
+.section:not(:last-child) {
+  border-bottom: 1px solid #CBCBCB;
+}
+@media (max-width: 1023px) {
+  .section {
+    padding-block: 73px 85px;
+  }
+}
 .section--hero {
   padding-block: 45px 85px;
+  border-bottom: none;
 }
 @media (max-width: 1023px) {
   .section--hero {
@@ -426,6 +438,7 @@ h4, .h4 {
   padding-block: 49px;
   background-color: var(--color-accent);
   margin: 0;
+  border-bottom: none;
   max-width: 100%;
   background: left/contain no-repeat url("/images/features-bg-left.svg"), right/contain no-repeat url("/images/features-bg-right.svg"), var(--color-accent);
 }
@@ -992,6 +1005,212 @@ h4, .h4 {
   .features__description {
     font-size: 14px;
   }
+}
+
+.download__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .download__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    row-gap: 100px;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+.download__image {
+  margin-left: 140px;
+}
+@media (max-width: 1280px) {
+  .download__image {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 1023px) {
+  .download__image {
+    width: 264px;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .download__image {
+    width: 210px;
+    height: auto;
+    margin-left: 30px;
+  }
+}
+.download__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 60px;
+  max-width: 560px;
+}
+@media (max-width: 1023px) {
+  .download__body {
+    row-gap: 45px;
+    max-width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .download__body {
+    row-gap: 37px;
+    max-width: 330px;
+  }
+}
+.download__title, .download__title-accent {
+  font-size: 50px;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.2;
+}
+@media (max-width: 1023px) {
+  .download__title, .download__title-accent {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .download__title, .download__title-accent {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.download__title-accent {
+  color: var(--color-accent);
+}
+.download__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 28px;
+}
+@media (max-width: 1023px) {
+  .download__list {
+    row-gap: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .download__list {
+    row-gap: 16px;
+  }
+}
+.download__item {
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #676767;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .download__item {
+    padding-left: 15px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .download__item {
+    padding-left: 12px;
+    font-size: 12px;
+  }
+}
+.download__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #676767;
+  top: 15px;
+  left: 0;
+  translate: 0 -3px;
+}
+@media (max-width: 1023px) {
+  .download__item::before {
+    top: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .download__item::before {
+    top: 9px;
+  }
+}
+.download__download {
+  -ms-flex-item-align: start;
+      align-self: start;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .download__download {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+.download__download ::after {
+  content: "";
+  width: 155px;
+  height: 87px;
+  background-image: url("../images/download-decorated-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -90%;
+  right: -75%;
+  rotate: -35deg;
+}
+@media (max-width: 1023px) {
+  .download__download ::after {
+    width: 110px;
+    height: 62px;
+    bottom: -115%;
+    right: -63%;
+  }
+}
+@media (max-width: 767px) {
+  .download__download ::after {
+    width: 101px;
+    height: 57px;
+    bottom: -150%;
+    right: 88%;
+    rotate: 70deg;
+  }
+}
+.download__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
 }
 
 .mobile-overlay {
