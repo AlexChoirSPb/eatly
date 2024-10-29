@@ -454,6 +454,58 @@ h4, .h4 {
     background: top left/330px auto no-repeat url("/images/features-mobile-top-left-bg.svg"), bottom right/135px auto no-repeat url("/images/features-mobile-bottom-right-bg.svg"), var(--color-accent);
   }
 }
+.section__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 85px;
+}
+.section__title, .section__title-accent {
+  font-family: "Poppins";
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1;
+}
+.section__title-accent {
+  color: var(--color-accent);
+}
+
+.icon-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  aspect-ratio: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #DBD9EE;
+  color: #6C5FBC;
+}
+@media (hover: hover) {
+  .icon-button:hover {
+    scale: 1.1;
+    background-color: #6C5FBC;
+    color: #DBD9EE;
+  }
+}
+@media (hover: none) {
+  .icon-button:active {
+    scale: 1.1;
+    background-color: #6C5FBC;
+    color: #DBD9EE;
+  }
+}
 
 .burger-button {
   padding: 0;
@@ -1083,7 +1135,7 @@ h4, .h4 {
 .download__title, .download__title-accent {
   font-size: 50px;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
 }
 @media (max-width: 1023px) {
@@ -1211,6 +1263,128 @@ h4, .h4 {
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
+}
+
+.restaurant-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.restaurant-card__body {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 11px 27px 18px 34px;
+}
+.restaurant-card__main {
+  font-family: "Poppins";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: 2px;
+}
+.restaurant-card__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+  font-family: "Manrope";
+  color: #8E97A6;
+  font-size: 19px;
+  line-height: 1.4;
+}
+.restaurant-card__label {
+  font-size: 12px;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background-color: #F7EDD0;
+  color: #DAA31A;
+}
+.restaurant-card__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.restaurant-card__star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #6C5FBC;
+}
+.restaurant-card__delivery-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 9px;
+     -moz-column-gap: 9px;
+          column-gap: 9px;
+}
+.restaurant-card__delivery-time::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #8E97A6;
+}
+
+.restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.restaurants__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.restaurants__list-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .mobile-overlay {

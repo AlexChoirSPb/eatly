@@ -1,0 +1,16 @@
+.icon-button {
+	@include reset-button;
+	@include square(40px);
+	@include flex-center;
+	
+	border-radius: 50%;
+	background-color: #DBD9EE;
+	color: #6C5FBC;
+
+	@include hover {
+		scale: 1.1;
+		background-color: #6C5FBC;
+		color: #DBD9EE;
+	
+	}
+}

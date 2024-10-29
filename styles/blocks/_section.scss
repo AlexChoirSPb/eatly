@@ -41,4 +41,22 @@
 		}
 		
 	}
+
+	&__header {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 85px;
+	}
+
+	&__title,
+	&__title-accent {
+		font-family: "Poppins";
+		font-size: 45px;
+		font-weight: 600;
+		line-height: 1;
+	}
+
+	&__title-accent {
+		color: var(--color-accent);
+	}
 }

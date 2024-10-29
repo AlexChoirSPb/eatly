@@ -1,0 +1,13 @@
+.restaurants {
+	display: flex;
+	justify-content: center;
+	
+	&__list {
+		display: flex;
+		column-gap: 30px;
+	}
+
+	&__list-item {
+		flex-grow: 1;
+	}
+}
