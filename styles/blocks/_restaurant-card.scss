@@ -1,0 +1,70 @@
+.restaurant-card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+	overflow: hidden;
+
+	&__body {
+		background-color: #ffffff;
+		display: flex;
+		column-gap: 12px;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 11px 27px 18px 34px;
+
+	}
+
+	&__main {
+		font-family: "Poppins";
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 2px;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		column-gap: 7px;
+		font-family: "Manrope";
+		color: #8E97A6;
+		font-size: 19px;
+		line-height: 1.4;
+	}
+
+	&__label {
+		font-size: 12px;
+		line-height: 1;
+		padding: 4px 8px;
+		border-radius: 5px;
+		background-color: #F7EDD0;
+		color: #DAA31A;
+	}
+
+	&__title {
+		font-size: 26px;
+		font-weight: 600;
+		line-height: 1.6;
+	}
+
+	&__star {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #6C5FBC;
+	}
+
+	&__delivery-time {
+		display: flex;
+		align-items: center;
+		column-gap: 9px;
+
+		&::after {
+			content: "";
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #8E97A6;
+		}
+	}
+}
