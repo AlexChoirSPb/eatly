@@ -1,6 +1,18 @@
 .restaurants {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	row-gap: 65px;
+
+	@include tablet {
+		row-gap: 46px;
+
+	}
+
+	@include mobile {
+		row-gap: 60px;
+	}
 	
 	&__list {
 		display: flex;
@@ -13,11 +25,21 @@
 		@include mobile {
 			flex-direction: column;
 			column-gap: 0;
+			align-items: center;
 			row-gap: 40px;
+			max-width: 375px;
 		}
 	}
 
 	&__list-item {
 		flex-grow: 1;
+		height: 100%;
+	}
+
+	&__button {
+		align-self: end;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
