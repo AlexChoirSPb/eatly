@@ -4,6 +4,21 @@
 	border-radius: 30px;
 	overflow: hidden;
 
+	@include tablet {
+		border-radius: 21px;
+	}
+
+	@include mobile {
+		border-radius: 24px;
+	}
+
+	&__image {
+		@include tablet {
+			height: auto;
+		}
+	}
+
+
 	&__body {
 		background-color: #ffffff;
 		display: flex;
@@ -12,6 +27,13 @@
 		align-items: flex-end;
 		padding: 11px 27px 18px 34px;
 
+		@include tablet {
+			padding: 8px 19px 13px 24px;
+		}
+
+		@include mobile {
+			padding: 9px 21px 14px 27px;
+		}
 	}
 
 	&__main {
@@ -30,6 +52,16 @@
 		color: #8E97A6;
 		font-size: 19px;
 		line-height: 1.4;
+
+		@include tablet {
+			font-size: 14px;
+			column-gap: 4px;
+		}
+
+		@include mobile {
+			font-size: 15px;
+			column-gap: 6px;
+		}
 	}
 
 	&__label {
@@ -39,12 +71,35 @@
 		border-radius: 5px;
 		background-color: #F7EDD0;
 		color: #DAA31A;
+
+		&--warning {
+			background-color: #F7C5BA;
+			color: #FB471D;
+		}
+
+		@include tablet {
+			font-size: 9px;
+			padding: 3px 6px;
+		}
+
+		@include mobile {
+			font-size: 10px;
+			padding: 4px 7px;
+		}
 	}
 
 	&__title {
 		font-size: 26px;
 		font-weight: 600;
 		line-height: 1.6;
+
+		@include tablet {
+			font-size: 18px;
+		}
+
+		@include mobile {
+			font-size: 20px;
+		}
 	}
 
 	&__star {
@@ -58,6 +113,14 @@
 		display: flex;
 		align-items: center;
 		column-gap: 9px;
+
+		@include tablet {
+			column-gap: 6px;
+		}
+
+		@include mobile {
+			column-gap: 8px;
+		}
 
 		&::after {
 			content: "";
