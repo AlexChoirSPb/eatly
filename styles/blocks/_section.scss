@@ -46,6 +46,11 @@
 		display: flex;
 		justify-content: center;
 		margin-bottom: 85px;
+
+		@include tablet {
+			margin-bottom: 60px;
+		}
+
 	}
 
 	&__title,
@@ -54,6 +59,15 @@
 		font-size: 45px;
 		font-weight: 600;
 		line-height: 1;
+
+		@include tablet {
+			font-size: 32px;
+		}
+
+		@include mobile {
+			font-size: 30px;
+			text-align: center;
+		}
 	}
 
 	&__title-accent {

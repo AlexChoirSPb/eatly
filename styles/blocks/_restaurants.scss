@@ -5,6 +5,16 @@
 	&__list {
 		display: flex;
 		column-gap: 30px;
+
+		@include tablet {
+			column-gap: 21px;
+		}
+
+		@include mobile {
+			flex-direction: column;
+			column-gap: 0;
+			row-gap: 40px;
+		}
 	}
 
 	&__list-item {
