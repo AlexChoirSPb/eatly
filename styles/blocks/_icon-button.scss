@@ -11,6 +11,29 @@
 		scale: 1.1;
 		background-color: #6C5FBC;
 		color: #DBD9EE;
-	
+	}
+
+	@include tablet {
+		width: 30px;
+	}
+
+	&--transparent {
+		background-color: transparent;
+
+		@include hover {
+			background-color: transparent;
+		}
+	}
+
+	&--dark {
+		border-radius: 9px;
+		background-color: #323142;
+		color: #fff;
+
+		@include hover {
+			scale: 1;
+			background-color: var(--color-accent);
+			color: #fff;
+		}
 	}
 }
