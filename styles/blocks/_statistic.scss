@@ -1,0 +1,45 @@
+.statistic {
+	max-width: 534px;
+	border-radius: 25px;
+	border: 1px solid #EDF2F7;
+	padding: 45px 40px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	row-gap: 38px;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 24px;
+	}
+
+	&__title {
+		font-family: "Manrope";
+		font-size: 28px;
+		font-weight: 900;
+		line-height: 1.35;
+		letter-spacing: 0.31px;
+	}
+
+	&__select {
+		padding: 12px 18px;
+		outline: none;
+		border: none;
+		background-color: #FAFAFA;
+		border-radius: 12px;
+		font-family: "Manrope";
+		font-size: 19px;
+		font-weight: 600;
+		line-height: 1.55;
+		letter-spacing: 0.63px;
+
+	}
+	
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 22px;
+	}
+}
