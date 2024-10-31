@@ -1,23 +1,23 @@
-.restaurants {
+.dishes {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	row-gap: 65px;
+	align-items: center;
 
-	@include tablet {
-		row-gap: 46px;
-
+	@include desktop {
+		row-gap: 55px;
 	}
 
 	@include mobile {
-		row-gap: 60px;
-	}
-	
-	&__list {
+
 	}
 
-	&__list-item {
+
+	&__list {
+		
+	}
+
+	&__item {
 		flex-grow: 1;
 		height: 100%;
 	}

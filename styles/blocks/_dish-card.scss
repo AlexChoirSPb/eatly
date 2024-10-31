@@ -1,0 +1,236 @@
+.dish-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 26px 23px 31px;
+	background-color: #ffffff;
+	border-radius: 35px;
+	border: 1px solid #F4F4F6;
+	box-shadow: 7px 55px 25px #e5e5e5;
+	row-gap: 14px;
+	height: 100%;
+
+	@include desktop {
+		box-shadow: 7px 45px 22px #e5e5e5;
+		padding: 12px 20px 26px;
+		border-radius: 25px;
+	}
+
+	@include mobile {
+		padding: 23px 15px 20px;
+		border-radius: 22px;
+	}
+
+
+	&__favorite {
+		position: absolute;
+		top:10px;
+		right: 10px;
+		color: #323142;
+		z-index: 2;
+
+		@include hover {
+			color: var(--color-accent);
+		}
+
+		@include desktop {
+			top: 7px;
+			right: 7px;
+		}
+
+		@include tablet {
+			top: 5px;
+			right: 5px;
+		}
+	}
+
+	&__image {
+		filter: drop-shadow(0px 0px 10px #888888);
+		height: auto;
+
+		@include desktop {
+			width: 150px;
+		}
+
+		@include tablet {
+			width: 130px;
+		}
+
+		@include mobile {
+			width: 120px;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: 13px;
+		flex-grow: 1;
+
+		@include desktop {
+			row-gap: 11px;
+		}
+
+		@include tablet {
+			row-gap: 9px;
+		}
+
+		@include mobile {
+			 row-gap: 7px;
+		}
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2px;
+		align-items: start;
+		flex-grow: 1;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		column-gap: 7px;
+		font-family: "Manrope";
+		color: #8E97A6;
+		font-size: 19px;
+		line-height: 1.4;
+
+		@include desktop {
+			font-size: 15px;
+			column-gap: 5px;
+		}
+
+		@include tablet {
+			font-size: 12px;
+			column-gap: 4px;
+		}
+
+		@include mobile {
+			font-size: 11px;
+			column-gap: 6px;
+		}
+
+		&--space-between {
+			justify-content: space-between;
+		}
+	}
+
+	&__label {
+		font-size: 12px;
+		line-height: 1;
+		padding: 4px 8px;
+		border-radius: 5px;
+		background-color: #F7EDD0;
+		color: #DAA31A;
+
+		&--warning {
+			background-color: #F7C5BA;
+			color: #FB471D;
+		}
+
+		&--top {
+			background-color: rgba(51, 172, 100, 0.2);
+			color: #309D5B;
+		}
+
+		@include tablet {
+			font-size: 9px;
+			padding: 3px 6px;
+		}
+
+		@include mobile {
+			font-size: 10px;
+			padding: 4px 7px;
+		}
+	}
+
+	&__title {
+		font-size: 26px;
+		font-weight: 600;
+		line-height: 1.6;
+		flex-grow: 1;
+
+		@include desktop {
+			font-size: 20px;
+		}
+
+		@include tablet {
+			font-size: 16px;
+		}
+
+		@include mobile {
+			font-size: 15px;
+		}
+	}
+
+	&__star {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #6C5FBC;
+	}
+
+	&__delivery-time {
+		display: flex;
+		align-items: center;
+		column-gap: 9px;
+
+		@include tablet {
+			column-gap: 6px;
+		}
+
+		@include mobile {
+			column-gap: 5px;
+		}
+
+		&::after {
+			content: "";
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #8E97A6;
+		}
+	}
+
+	&__price {
+		font-family: "Manrope";
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 1.5;
+		color: #323142;
+
+		@include desktop {
+			font-size: 22px;
+		}
+
+		@include tablet {
+			font-size: 18px;
+		}
+
+		@include mobile {
+			font-size: 17px;
+		}
+	}
+
+	&__cents {
+		font-family: "Manrope";
+		font-size: 19px;
+		font-weight: 700;
+		line-height: 1.5;
+		color: #8E97A6;
+
+		@include desktop {
+			font-size: 16px;
+		}
+
+		@include tablet {
+			font-size: 13px;
+		}
+
+		@include mobile {
+			font-size: 12px;
+		}
+	}
+}
