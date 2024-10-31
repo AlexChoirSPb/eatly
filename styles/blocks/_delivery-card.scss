@@ -1,0 +1,48 @@
+.delivery-card {
+	display: flex;
+	align-items: center;
+	column-gap: 19px;
+	max-width: 345px;
+	padding: 10px 17px;
+	border-radius: 12px;
+	background-color: #fff;
+
+	&--selected {
+		box-shadow: 0px 20px 30px rgba(70,70,70,0.1);
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 4px;
+	}
+
+	&__title {
+		font-family: "Poppins";
+		font-size: 19px;
+		font-weight: 600;
+		line-height: 1.4;
+	}
+
+	&__status {
+		font-family: "Poppins";
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1.4;
+
+
+		&--error {
+			color: #F1534E;
+		}
+	}
+
+	&__time {
+		font-family: "Poppins";
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 1.4;
+		color: #ACADB9;
+		align-self: flex-end;
+		margin-left: auto;
+	}
+}
