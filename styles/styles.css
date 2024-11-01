@@ -374,6 +374,7 @@ body {
   line-height: 1.28;
   color: var(--color-dark);
   background-color: var(--color-light);
+  overflow-x: hidden;
 }
 
 a,
@@ -413,6 +414,29 @@ h4, .h4 {
   font-size: clamp(18px, 1.3888888889vw, 20px);
 }
 
+.input {
+  font-family: "Poppins";
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  min-width: 270px;
+}
+.input::-webkit-input-placeholder {
+  color: #878787;
+}
+.input::-moz-placeholder {
+  color: #878787;
+}
+.input:-ms-input-placeholder {
+  color: #878787;
+}
+.input::-ms-input-placeholder {
+  color: #878787;
+}
+.input::placeholder {
+  color: #878787;
+}
 .grid {
   --gridColumns: 1;
   display: grid;
@@ -2716,6 +2740,49 @@ h4, .h4 {
   .reviews__list {
     padding-bottom: 45px;
   }
+}
+
+.promotion {
+  padding: 37px 66px;
+  border-radius: 30px;
+  background: center/cover no-repeat url("../images/promotion-bg.svg"), var(--color-accent);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.promotion__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 36px;
+     -moz-column-gap: 36px;
+          column-gap: 36px;
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 14px;
+}
+.promotion__image {
+  position: absolute;
+  bottom: -100px;
+  right: 50px;
+  -webkit-filter: drop-shadow(0px 0px 10px #888888);
+          filter: drop-shadow(0px 0px 10px #888888);
+}
+.promotion__title {
+  font-family: "Poppins";
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 9px;
+  line-height: 1.5;
+  color: #FFFFFF;
 }
 
 .mobile-overlay {
