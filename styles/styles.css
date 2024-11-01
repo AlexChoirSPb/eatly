@@ -2785,7 +2785,7 @@ h4, .h4 {
 }
 @media (max-width: 374px) {
   .promotion {
-    padding: 35px 16px 105px;
+    padding: 35px 10px 105px;
   }
 }
 .promotion__form {
