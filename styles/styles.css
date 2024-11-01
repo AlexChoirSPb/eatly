@@ -2783,6 +2783,11 @@ h4, .h4 {
     padding: 35px 27px 105px;
   }
 }
+@media (max-width: 374px) {
+  .promotion {
+    padding: 35px 16px 105px;
+  }
+}
 .promotion__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2805,9 +2810,9 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .promotion__form {
-    -webkit-column-gap: 12px;
-       -moz-column-gap: 12px;
-            column-gap: 12px;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
     width: 100%;
   }
 }

@@ -18,6 +18,10 @@
 		padding: 35px 27px 105px;
 	}
 
+	@include mobile-s {
+		padding: 35px 16px 105px;
+	}
+
 	&__form {
 		display: flex;
 		column-gap: 36px;
@@ -32,7 +36,7 @@
 		}
 
 		@include mobile{
-			column-gap: 12px;
+			column-gap: 0;
 			width: 100%;
 		 }
 	}
