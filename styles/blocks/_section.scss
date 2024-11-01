@@ -68,6 +68,12 @@
 			font-size: 30px;
 			text-align: center;
 		}
+
+		&--left {
+			@include mobile {
+				text-align-last: left;
+			}
+		}
 	}
 
 	&__title-accent {

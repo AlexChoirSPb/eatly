@@ -6,6 +6,18 @@
 	flex-direction: column;
 	row-gap: 20px;
 
+	@include tablet {
+		padding: 18px;
+		border-radius: 13px;
+		row-gap: 15px;
+	}
+
+	@include mobile {
+		padding: 15px;
+		border-radius: 11px;
+		row-gap: 12px;
+	}
+
 	&__badge {
 		@include square(50px);
 		@include flex-center;
@@ -13,11 +25,30 @@
 		border-radius: 50%;
 		background-color: #F4F0FF;
 		color: #936DFF;
+		flex-shrink: 0;
+
+		@include tablet {
+			width: 36px;
+		}
+
+		@include mobile {
+			width: 30px;
+		}
 
 		svg {
 			width: 25px;
 			height: 25px;
 			flex-shrink: 0;
+
+			@include tablet {
+				width: 18px;
+				height: 18px;
+			}
+
+			@include mobile {
+				width: 15px;
+				height: 15px;
+			}
 		}
 
 		&--primary {
@@ -31,6 +62,14 @@
 		display: flex;
 		align-items: center;
 		column-gap: 18px;
+
+		@include tablet {
+			column-gap: 14px;
+		}
+
+		@include mobile {
+			column-gap: 11px;
+		}
 	}
 
 	&__title {
@@ -39,6 +78,14 @@
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.63px;
+
+		@include tablet {
+			font-size: 13px;
+		}
+
+		@include mobile {
+			font-size: 11px;
+		}
 	}
 
 	&__conclusion {
@@ -48,12 +95,24 @@
 		line-height: 1.5;
 		letter-spacing: 0.63px;
 		color: #A0AEC0;
+
+		@include tablet {
+			font-size: 11px;
+		}
+
+		@include mobile {
+			font-size: 9px;
+		}
 	}
 
 	&__inner {
 		display: flex;
 		flex-direction: column;
 		row-gap: 3px;
+
+		@include tablet {
+			row-gap: 2px;
+		}
 	}
 
 	&__progress {
@@ -63,6 +122,14 @@
 		background-color: rgba(108,95,188,0.2);
 		position: relative;
 		overflow-x: hidden;
+
+		@include tablet {
+			height: 7px;
+		}
+
+		@include mobile {
+			height: 5px;
+		}
 
 		&::after {
 			content: "";
@@ -91,5 +158,13 @@
 		line-height: 1.5;
 		letter-spacing: 0.31px;
 		margin-left: auto;
+
+		@include tablet {
+			font-size: 15px;
+		}
+
+		@include mobile {
+			font-size: 13px;
+		}
 	}
 }

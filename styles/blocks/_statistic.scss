@@ -7,6 +7,23 @@
 	display: flex;
 	flex-direction: column;
 	row-gap: 38px;
+	box-shadow: 0px 15px 30px #595959;
+	width: 100%;
+
+	@include tablet {
+		max-width: 380px;
+		border-radius: 18px;
+		padding: 32px 29px;
+		row-gap: 27px;
+	}
+
+	@include mobile {
+		max-width: 316px;
+		border-radius: 15px;
+		padding: 22px 27px;
+		row-gap: 22px;
+	}
+	
 
 	&__header {
 		display: flex;
@@ -21,6 +38,14 @@
 		font-weight: 900;
 		line-height: 1.35;
 		letter-spacing: 0.31px;
+
+		@include tablet {
+			font-size: 20px;
+		}
+
+		@include mobile {
+			font-size: 16px;
+		}
 	}
 
 	&__select {
@@ -35,11 +60,31 @@
 		line-height: 1.55;
 		letter-spacing: 0.63px;
 
+		@include tablet {
+			padding: 9px 13px;
+			font-size: 13px;
+			border-radius: 9px;
+		}
+
+		@include mobile {
+			padding: 7px 10px;
+			font-size: 11px;
+			border-radius: 7px;
+		}
+
 	}
 	
 	&__list {
 		display: flex;
 		flex-direction: column;
 		row-gap: 22px;
+
+		@include tablet {
+			row-gap: 15px;
+		}
+
+		@include mobile {
+			row-gap: 13px;
+		}
 	}
 }

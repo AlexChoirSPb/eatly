@@ -2,10 +2,26 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
-	column-gap: 24px;
+	column-gap: 12px;
+
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+		column-gap: 0;
+		row-gap: 100px;
+	}
 
 	&__header {
 		margin-bottom: 48px;
+
+		@include tablet {
+			margin-bottom: 34px;
+		}
+
+		@include mobile {
+			margin-bottom: 26px;
+		}
+
 	}
 
 	&__inner {
@@ -14,6 +30,28 @@
 		align-items: flex-start;
 		max-width: 560px;
 		width: 100%;
+
+		@include tablet {
+			max-width: 400px;
+		}
+
+		@include mobile {
+			max-width: 314px;
+			position: relative;
+		}
+
+		&::after {
+			content: "";
+
+			@include mobile {
+				width: 56px;
+				height: 100px;
+				position: absolute;
+				bottom: -80px;
+				right: 20px;
+				background: center / contain no-repeat url("/images/purchases-arrow-bg.svg");	
+			}
+		} 
 	}
 
 	&__delivery-list-inner {
@@ -25,5 +63,23 @@
 		flex-direction: column;
 		row-gap: 15px;
 		height: 100%;
+
+		@include tablet {
+			row-gap: 10px;
+		}
+	}
+
+	&__statistic {
+		max-width: 534px;
+		flex: 1 1 534px;
+
+		@include tablet {
+			max-width: 380px;
+		}
+
+		@include mobile {
+			max-width: 316px;
+		}
+		
 	}
 }
