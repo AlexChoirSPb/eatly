@@ -49,7 +49,7 @@
 				position: absolute;
 				bottom: -80px;
 				right: 20px;
-				background: center / contain no-repeat url("/images/purchases-arrow-bg.svg");	
+				background: center / contain no-repeat url("../images/purchases-arrow-bg.svg");	
 			}
 		} 
 	}
@@ -78,7 +78,8 @@
 		}
 
 		@include mobile {
-			max-width: 316px;
+			width: 316px;
+			flex: 0 0 auto;
 		}
 		
 	}

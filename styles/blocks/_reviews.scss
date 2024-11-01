@@ -1,0 +1,56 @@
+.reviews {
+	&__body {
+		display: flex;
+		align-items: stretch;
+		column-gap: 46px;
+
+		@include desktop {
+			column-gap: 36px;
+		}
+
+		@include tablet {
+			column-gap: 32px;
+		}
+	}
+
+	&__review {
+		flex: 0 0 528px;
+
+		@include tablet {
+			flex: 0 0 375px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: stretch;
+		column-gap: 46px;
+		overflow-y: auto;
+
+		&::-webkit-scrollbar {
+			height: 11px; /* Ширина всего элемента навигации */
+
+			@include tablet {
+				height: 8px;
+			}
+		 }
+		 
+		 &::-webkit-scrollbar-track {
+			background-color: rgba(108, 95, 188, 0.2); /* Цвет дорожки */
+		 }
+		 
+		 &::-webkit-scrollbar-thumb {
+			background-color: rgba(108, 95, 188, 1); /* Цвет дорожки */
+			border-radius:6px; /* Округление бегунка */
+		 }
+
+		 @include tablet {
+			column-gap: 32px;
+		 }
+
+		 @include mobile {
+			padding-bottom: 45px;
+		 }
+
+	}
+}

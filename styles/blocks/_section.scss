@@ -19,6 +19,7 @@
 		}
 	}
 
+
 	&--features {
 		width: 100%;
 		padding-block: 49px;
@@ -26,7 +27,7 @@
 		margin: 0;
 		border-bottom: none;
 		max-width: 100%;
-		background: left / contain no-repeat url("/images/features-bg-left.svg"), right / contain no-repeat url("/images/features-bg-right.svg"), var(--color-accent);
+		background: left / contain no-repeat url("../images/features-bg-left.svg"), right / contain no-repeat url("../images/features-bg-right.svg"), var(--color-accent);
 
 		@include desktop {
 			padding-block: 35px;
@@ -36,7 +37,7 @@
 			padding-bottom: 26px;
 			padding-inline: 60px;
 
-			background: top left/330px auto no-repeat url("/images/features-mobile-top-left-bg.svg"), bottom right/135px auto no-repeat url("/images/features-mobile-bottom-right-bg.svg"), var(--color-accent);
+			background: top left/330px auto no-repeat url("../images/features-mobile-top-left-bg.svg"), bottom right/135px auto no-repeat url("../images/features-mobile-bottom-right-bg.svg"), var(--color-accent);
 
 		}
 		
