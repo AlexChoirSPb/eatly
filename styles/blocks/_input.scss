@@ -1,0 +1,25 @@
+.input {
+	font-family: "Poppins";
+	font-size: 16px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	min-width: 270px;
+
+	@include tablet {
+		min-width: 190px;
+		font-size: 12px;
+	}
+
+	@include mobile {
+		min-width: auto;
+	}
+
+	&::placeholder {
+		color: #878787;
+	}
+
+	&--transparent {
+
+	}
+}
