@@ -1,0 +1,37 @@
+.soc1als {
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: 54px;
+
+		@include tablet {
+			column-gap: 38px;
+		}
+	}
+
+	&__link {
+		padding: 12px 0;
+		@include flex-center;
+
+		@include tablet {
+			svg {
+				width: 15px;
+				height: 15px;
+			}
+		}
+
+		@include hover {
+			color: var(--color-accent);
+		}
+		
+
+		&--accent {
+			color: var(--color-accent);
+
+			@include hover {
+				color: var(--color-dark);
+			}
+		}
+	}
+	
+}

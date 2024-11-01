@@ -6,6 +6,15 @@
 	outline: none;
 	min-width: 270px;
 
+	@include tablet {
+		min-width: 190px;
+		font-size: 12px;
+	}
+
+	@include mobile {
+		min-width: auto;
+	}
+
 	&::placeholder {
 		color: #878787;
 	}
